@@ -73,8 +73,7 @@
 <body>
 
 <header>
-    <img src="https://${azurerm_storage_account.portfolio_sa.name}.blob.core.windows.net/${azurerm_storage_container.images.name}/${azurerm_storage_blob.profile_photo.name}">  
-    
+   <img src="https://${aws_s3_bucket.bucket.bucket}.s3.${aws_s3_bucket.bucket.region}.amazonaws.com/${aws_s3_object.image.key}"> 
         
     <h1>Nallamekala Siva Brahmaiah</h1>
     <p>Multi-Cloud DevOps Engineer</p>
