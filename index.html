@@ -73,10 +73,8 @@
 <body>
 
 <header>
-    <!-- <img src="https://siva-portfolio-assets-12345.s3.amazonaws.com/siva-resume-pic.jpg"
-         alt="Siva Brahmaiah"> -->
-    <img src="https://sivastorageaccount12345.blob.core.windows.net/images/siva.jpeg"
-         alt="Siva Brahmaiah"
+    <img src="https://${azurerm_storage_account.portfolio_sa.name}.blob.core.windows.net/${azurerm_storage_container.images.name}/${azurerm_storage_blob.profile_photo.name}">  
+    <img src="https://${aws_s3_bucket.bucket.bucket}.s3.${aws_s3_bucket.bucket.region}.amazonaws.com/${aws_s3_object.image.key}">
         
     <h1>Nallamekala Siva Brahmaiah</h1>
     <p>Multi-Cloud DevOps Engineer</p>
